@@ -1,0 +1,10 @@
+.uy-card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.uy-title {
+  text-align: center;
+}

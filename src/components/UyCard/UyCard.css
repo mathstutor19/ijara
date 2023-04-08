@@ -1,0 +1,13 @@
+.uy-card {
+  width: 30%;
+}
+.uy-card-image {
+  width: 100%;
+  height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .uy-card {
+    width: 45% !important;
+  }
+}

@@ -1,0 +1,9 @@
+.ish-card {
+  width: 30%;
+  padding: 30px;
+}
+@media screen and (max-width: 768px) {
+  .ish-card {
+    width: 45%;
+  }
+}

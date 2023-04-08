@@ -1,0 +1,25 @@
+.services-title {
+  text-align: center;
+  margin-bottom: 20x;
+}
+.services-cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services-card {
+  padding: 20px;
+  width: 243.5px;
+  background: #f9faff;
+  box-shadow: 0px 0px 16px rgba(230, 230, 230, 0.5);
+  border-radius: 24px;
+  text-align: center;
+}
+.services-card-title {
+  margin-top: 20px;
+}
+.services-image {
+  margin: auto;
+}
