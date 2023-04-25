@@ -1,8 +1,8 @@
 const cardsData = [
   {
     id: 1,
-    title: 'yangi kutubxona',
-    hudud: 'namangan',
+    title: 'bilim axborot-kutubxonasi',
+    hudud: 'tashkent',
     narxi: 'tekin',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, voluptatum velit iure fugiat consequatur consectetur explicabo nam commodi esse officiis.',
@@ -11,8 +11,8 @@ const cardsData = [
   },
   {
     id: 2,
-    title: 'eski kutubxona',
-    hudud: 'andijon',
+    title: "targ'ibotchi kitobxon kutubxonasi",
+    hudud: 'tashkent',
     narxi: 'pullik',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, voluptatum velit iure fugiat consequatur consectetur explicabo nam commodi esse officiis.',
@@ -21,8 +21,8 @@ const cardsData = [
   },
   {
     id: 3,
-    title: 'yangi kutubxona',
-    hudud: 'fargona',
+    title: 'A.Navoi kutubxonasi',
+    hudud: 'tashkent',
     narxi: 'pullik',
 
     description:
@@ -32,8 +32,8 @@ const cardsData = [
   },
   {
     id: 4,
-    title: 'ortacha kutubxona',
-    hudud: 'tashkent',
+    title: 'A.S.Pushkin kutubxonasi',
+    hudud: 'samarqand',
     narxi: 'tekin',
 
     description:
@@ -43,8 +43,8 @@ const cardsData = [
   },
   {
     id: 5,
-    title: 'yangi kutubxona',
-    hudud: 'namangan',
+    title: 'bobir kutubxonasi',
+    hudud: 'andijon',
     narxi: 'pullik',
 
     description:
@@ -54,8 +54,8 @@ const cardsData = [
   },
   {
     id: 6,
-    title: 'eski kutubxona',
-    hudud: 'andijon',
+    title: 'abu ali ibn sino kutubxona',
+    hudud: 'buxoro',
     narxi: 'tekin',
 
     description:
@@ -65,8 +65,8 @@ const cardsData = [
   },
   {
     id: 7,
-    title: 'yangi kutubxona',
-    hudud: 'fargona',
+    title: "ko'zi ojizlar kutubxonasi",
+    hudud: 'tashkent',
     jinsi: 'ayol',
     narxi: 'tekin',
 
@@ -77,7 +77,7 @@ const cardsData = [
   },
   {
     id: 8,
-    title: 'ortacha kutubxona',
+    title: "mari'fat kutubxonasi",
     hudud: 'tashkent',
     narxi: 'pullik',
 
@@ -88,8 +88,8 @@ const cardsData = [
   },
   {
     id: 9,
-    title: 'yangi kutubxona',
-    hudud: 'namangan',
+    title: 'ilmiy-pedagogika kutubxonasi',
+    hudud: 'tashkent',
     narxi: 'pullik',
 
     description:
@@ -99,8 +99,8 @@ const cardsData = [
   },
   {
     id: 10,
-    title: 'eski kutubxona',
-    hudud: 'andijon',
+    title: 'patent kutubxonasi',
+    hudud: 'tashkent',
     narxi: 'tekin',
 
     description:
@@ -110,8 +110,8 @@ const cardsData = [
   },
   {
     id: 11,
-    title: 'yangi kutubxona',
-    hudud: 'fargona',
+    title: 'simpoziumlar saroyi kutubxonasi',
+    hudud: 'tashkent',
     narxi: 'tekin',
 
     description:
@@ -121,8 +121,8 @@ const cardsData = [
   },
   {
     id: 12,
-    title: 'ortacha kutubxona',
-    hudud: 'tashkent',
+    title: 'termeziy kutubxonasi',
+    hudud: 'surxandaryo',
     narxi: 'pullik',
 
     description:

@@ -5,7 +5,11 @@
   box-sizing: border-box;
 }
 body {
-  background: #ebebeb;
+  /* background: #ebebeb; */
+  /* background-color: #fafafa; */
+  /* color: #1de660 */
+  /* rgb(17, 219, 17) */
+  background-color: #f4efed;
   color: black;
   font-family: 'Montserrat', sans-serif;
 }
@@ -14,4 +18,38 @@ a {
 }
 li {
   list-style: none;
+}
+.heading-one {
+  color: black;
+}
+.heading-two {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 140%;
+}
+.heading-three {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+}
+.heading-four {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+.paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+@media screen and (max-width: 668px) {
+  .heading-two {
+    font-size: 24px;
+  }
+  .heading-three {
+    font-size: 16px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
 }

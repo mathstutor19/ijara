@@ -1,13 +1,52 @@
 .uy-card {
-  width: 30%;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.uy-card:hover {
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.uy-card-desc-wrapper {
+  padding: 10px;
 }
 .uy-card-image {
   width: 100%;
-  height: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
-
-@media screen and (max-width: 768px) {
-  .uy-card {
-    width: 45% !important;
+.uy-icons {
+  font-size: 20px;
+  color: rgb(17, 219, 17);
+  margin-right: 10px;
+}
+.uy-icons-wrapper {
+  display: flex;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 668px) {
+  .uy-icons {
+    margin-right: 7px;
+  }
+  .uy-card-title {
+    display: none;
+  }
+  .uy-card-jinsi {
+    display: none;
   }
 }

@@ -1,9 +1,36 @@
 .ish-card {
-  width: 30%;
-  padding: 30px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0.85;
+  padding: 20px;
+  background-color: white;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
-@media screen and (max-width: 768px) {
-  .ish-card {
-    width: 45%;
-  }
+.ish-card:hover {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  padding: 20px;
+  background-color: white;
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.ish-hudud {
+  display: flex;
+  text-transform: capitalize;
+}
+.ish-location {
+  font-size: 20px;
+  color: rgb(17, 219, 17);
+  margin-right: 10px;
 }

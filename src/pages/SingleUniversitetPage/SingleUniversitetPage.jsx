@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Container from '../../components/Container/Container';
 import Section from '../../components/Section/Section';
-import cardsData from '../../Datas/barklar';
-import './SingleBarkPage.css';
-function SingleBarkPage() {
+import cardsData from '../../Datas/universitet';
+import './SingleUniversitetPage.css';
+function SingleUniversitetPage() {
   let { id } = useParams();
   let singleHome = cardsData.filter((item) => item.id == id);
   return (
@@ -29,4 +29,4 @@ function SingleBarkPage() {
   );
 }
 
-export default SingleBarkPage;
+export default SingleUniversitetPage;

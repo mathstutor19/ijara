@@ -1,49 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Container from '../../components/Container/Container';
 import Section from '../../components/Section/Section';
-import './Ishlar.css';
-import cardsData from '../../Datas/ishlar';
-import IshCard from '../../components/IshCard/IshCard';
-function Ishlar() {
+import './Universitetlar.css';
+import cardsData from '../../Datas/universitet';
+import UniversitetlarCard from '../../components/UniversitetlarCard/UniversitetlarCard';
+function Universitetlar() {
   const [filteredData, setFilteredData] = useState(cardsData);
-  const [hudud, setHudud] = useState('hammasi');
-  const [kasbi, setKasbi] = useState('hammasi');
-  const [tajriba, setTajriba] = useState('hammasi');
-  const [jinsi, setJinsi] = useState('hammasi');
-  const [pagination, setPagination] = useState(0);
-  useEffect(() => {
-    let result = cardsData;
-    if (jinsi !== 'hammasi') {
-      result = result.filter((item) => item.jinsi === jinsi);
-    }
-    if (hudud !== 'hammasi') {
-      result = result.filter((item) => item.hudud === hudud);
-    }
-    // if (kasbi !== 'hammasi') {
-    //   result = result.filter((item) => item.kasbi === kasbi);
-    // }
-    if (tajriba !== 'hammasi') {
-      result = result.filter((item) => item.tajriba >= tajriba);
-    }
 
-    setFilteredData(result);
-  }, [hudud, kasbi, tajriba, jinsi]);
-
-  function handleFilterJinsi(e) {
-    const value = e.target.value.toLowerCase();
-    setJinsi(value);
-  }
   function handleFilterHudud(e) {
     const value = e.target.value.toLowerCase();
-    setHudud(value);
-  }
-  function handleFilterKasbi(e) {
-    const value = e.target.value.toLowerCase();
-    setKasbi(value);
-  }
-  function handleFilterTajriba(e) {
-    const value = e.target.value.toLowerCase();
-    setTajriba(value);
+    const result = cardsData.filter((item) => item.hudud === value);
+    setFilteredData(result);
+    if (value === 'hammasi') {
+      setFilteredData(cardsData);
+    }
   }
 
   return (
@@ -51,14 +21,6 @@ function Ishlar() {
       <nav className="uylar-nav">
         <Container>
           <div className="uylar-label-wrapper">
-            <label className="uylar-label">
-              Jinsi
-              <select className="uylar-select" onChange={handleFilterJinsi}>
-                <option value="hammasi">hammasi</option>
-                <option value="erkak">erkak</option>
-                <option value="ayol">ayol</option>
-              </select>
-            </label>
             <label className="uylar-label">
               Hududi
               <select className="uylar-select" onChange={handleFilterHudud}>
@@ -69,24 +31,6 @@ function Ishlar() {
                 <option value="namangan">Namangan</option>
               </select>
             </label>
-            {/* <label className="uylar-label">
-              Kasbi
-              <select className="uylar-select" onChange={handleFilterKasbi}>
-                <option value="hammasi">hammasi</option>
-                <option value="kerak">Kerak</option>
-                <option value="kerakmas">Kerakmas</option>
-              </select>
-            </label> */}
-            <label className="uylar-label">
-              Tajriba
-              <select className="uylar-select" onChange={handleFilterTajriba}>
-                <option value="hammasi">hammasi</option>
-                <option value="1">0-1</option>
-                <option value="3">1-3</option>
-                <option value="5">3-5</option>
-                <option value="6">5+</option>
-              </select>
-            </label>
           </div>
         </Container>
       </nav>
@@ -94,7 +38,7 @@ function Ishlar() {
         <Container>
           <div className="uy-card-wrapper">
             {filteredData.map((card) => (
-              <IshCard key={card.id} cardData={card} />
+              <UniversitetlarCard key={card.id} cardData={card} />
             ))}
           </div>
           <div className="uy-pagination">
@@ -147,4 +91,4 @@ function Ishlar() {
   );
 }
 
-export default Ishlar;
+export default Universitetlar;

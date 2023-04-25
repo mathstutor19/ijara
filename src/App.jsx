@@ -1,14 +1,11 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import Services from './components/Services/Services';
-import Welcome from './components/Welcome/Welcome';
 import Home from './pages/Home/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Uylar from './pages/Uylar/Uylar';
 import Kutubxona from './pages/Kutubxona/Kutubxona';
 import Ishlar from './pages/Ishlar/Ishlar';
-import Barklar from './pages/Barklar/Barklar';
 import SignIn from './pages/SignIn/SignIn';
 import SignUp from './pages/SignUp/SignUp';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
@@ -22,7 +19,8 @@ import Listing from './pages/Listing/Listing';
 import SingleHomePage from './pages/SingleHomePage/SingleHomePage';
 import SingleJobPage from './pages/SingleJobPage/SingleJobPage';
 import SingleLiblaryPage from './pages/SingleLiblaryPage/SingleLiblaryPage';
-import SingleBarkPage from './pages/SingleBarkPage/SingleBarkPage';
+import Universitetlar from './pages/Universitetlar/Universitetlar';
+import SingleUniversitetPage from './pages/SingleUniversitetPage/SingleUniversitetPage';
 function App() {
   return (
     <>
@@ -33,7 +31,7 @@ function App() {
           <Route path="/uylar" element={<Uylar />}></Route>
           <Route path="/kutubxonalar" element={<Kutubxona />}></Route>
           <Route path="/ishlar" element={<Ishlar />}></Route>
-          <Route path="/barklar" element={<Barklar />}></Route>
+          <Route path="/universitetlar" element={<Universitetlar />}></Route>
           <Route path="/sign-in" element={<SignIn />}></Route>
           <Route path="/sign-up" element={<SignUp />}></Route>
           <Route path="/uylar/:id" element={<SingleHomePage />}></Route>
@@ -42,7 +40,10 @@ function App() {
             path="/kutubxonalar/:id"
             element={<SingleLiblaryPage />}
           ></Route>
-          <Route path="/barklar/:id" element={<SingleBarkPage />}></Route>
+          <Route
+            path="/universitetlar/:id"
+            element={<SingleUniversitetPage />}
+          ></Route>
           <Route
             path="/category/:categoryName/:listingId"
             element={<Listing />}

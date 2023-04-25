@@ -1,7 +1,11 @@
-header {
+.header {
   padding: 20px 0px;
   background: #ffffff;
   box-shadow: 0px 0px 16px rgba(230, 230, 230, 0.5);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 ul {
@@ -17,22 +21,74 @@ ul {
   font-size: 16px;
   line-height: 24px;
   color: black;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  position: relative;
+  opacity: 0.8;
+}
+
+.menu-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: rgb(17, 219, 17);
+  height: 3px;
+  bottom: -4px;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.menu-item:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.active {
+  display: block;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: rgb(17, 219, 17);
+  height: 3px;
+  bottom: -4px;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   position: relative;
   z-index: 40;
   background: #ffffff;
 }
+
 .logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 24px;
-  color: black;
+  color: rgb(17, 219, 17);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.logo :hover {
+  color: green;
 }
 
 .nav__menu {
@@ -41,9 +97,11 @@ ul {
   justify-content: space-around;
   gap: 3rem;
 }
+
 .nav__toggler {
   display: none;
 }
+
 .nav__toggler div {
   width: 30px;
   height: 3px;
@@ -57,21 +115,33 @@ ul {
     display: block;
     cursor: pointer;
   }
+
   .nav__menu {
-    position: fixed;
-    top: 7vh;
-    right: 0;
-    height: 93vh;
-    width: 50vw;
-    background: #ffffff;
-    flex-direction: column;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
+    display: none;
   }
 }
+
 /* Active Class */
-.nav__active {
-  transform: translateX(0%);
+.nav__menu-small {
+  padding-bottom: 3vh;
+  position: fixed;
+  top: 7vh;
+  right: 0;
+  height: 93vh;
+  width: 50vw;
+  background: white;
+  transition: 0.5s ease-in;
+}
+
+.nav__menu-small-toggle {
+  display: none;
+}
+
+.menu-items-small {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80vh;
 }
 
 /* Toggle Icon Animation */
@@ -79,9 +149,11 @@ ul {
 .toggle .line1 {
   transform: rotate(-45deg) translate(-4px, 5px);
 }
+
 .toggle .line2 {
   opacity: 0;
 }
+
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
 }
