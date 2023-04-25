@@ -9,6 +9,11 @@
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
+.footer-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgb(17, 219, 17);
+}
 .footer-image-wrapper {
   display: flex;
 }

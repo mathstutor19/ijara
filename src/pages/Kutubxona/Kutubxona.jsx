@@ -60,6 +60,9 @@ function Kutubxona() {
       </nav>
       <Section>
         <Container>
+          <h2 className="heading-two text-center mb-5 -mt-5 capitalize">
+            {hudud} {filteredData.length} kutubxona topildi
+          </h2>
           <div className="uy-card-wrapper">
             {filteredData.map((card) => (
               <KutubxonaCard key={card.id} cardData={card} />
@@ -83,9 +86,9 @@ function Kutubxona() {
               </svg>
             </button>
             <div className="uy-page-numbers">
-              <button className="uy-btn-page">1</button>
+              <button className="uy-btn-page uy-btn-selected">1</button>
               <button className="uy-btn-page">2</button>
-              <button className="uy-btn-page uy-btn-selected">3</button>
+              <button className="uy-btn-page ">3</button>
               <button className="uy-btn-page">4</button>
               <button className="uy-btn-page">5</button>
 

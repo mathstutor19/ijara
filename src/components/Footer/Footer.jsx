@@ -11,7 +11,7 @@ function Footer() {
       <Container>
         <div className="footer-container">
           <div className="footer-left">
-            <h2 className="heading-three">Ijara.uz</h2>
+            <h2 className="footer-title">Ijara.uz</h2>
             <p className="footer-text paragraph">
               Uzbekistonda talabalarga uy topish, ish topish va kutubxona topish
               platformasi.

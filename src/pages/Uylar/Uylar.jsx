@@ -116,9 +116,9 @@ function Uylar() {
               </svg>
             </button>
             <div className="uy-page-numbers">
-              <button className="uy-btn-page">1</button>
+              <button className="uy-btn-page uy-btn-selected">1</button>
               <button className="uy-btn-page">2</button>
-              <button className="uy-btn-page uy-btn-selected">3</button>
+              <button className="uy-btn-page ">3</button>
               <button className="uy-btn-page">4</button>
               <button className="uy-btn-page">5</button>
 

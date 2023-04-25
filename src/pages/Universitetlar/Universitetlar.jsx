@@ -6,11 +6,12 @@ import cardsData from '../../Datas/universitet';
 import UniversitetlarCard from '../../components/UniversitetlarCard/UniversitetlarCard';
 function Universitetlar() {
   const [filteredData, setFilteredData] = useState(cardsData);
-
+  const [hudud, setHudud] = useState('hammasi');
   function handleFilterHudud(e) {
     const value = e.target.value.toLowerCase();
     const result = cardsData.filter((item) => item.hudud === value);
     setFilteredData(result);
+    setHudud(value);
     if (value === 'hammasi') {
       setFilteredData(cardsData);
     }
@@ -36,6 +37,9 @@ function Universitetlar() {
       </nav>
       <Section>
         <Container>
+          <h2 className="heading-two text-center mb-5 -mt-5 capitalize">
+            {hudud} {filteredData.length} Universitet topildi
+          </h2>
           <div className="uy-card-wrapper">
             {filteredData.map((card) => (
               <UniversitetlarCard key={card.id} cardData={card} />
@@ -59,9 +63,9 @@ function Universitetlar() {
               </svg>
             </button>
             <div className="uy-page-numbers">
-              <button className="uy-btn-page">1</button>
+              <button className="uy-btn-page uy-btn-selected">1</button>
               <button className="uy-btn-page">2</button>
-              <button className="uy-btn-page uy-btn-selected">3</button>
+              <button className="uy-btn-page">3</button>
               <button className="uy-btn-page">4</button>
               <button className="uy-btn-page">5</button>
 
