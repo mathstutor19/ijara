@@ -3,6 +3,7 @@
   margin: 20px auto;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .universitet-yotoqxona {
   display: inline-block;
@@ -54,4 +55,15 @@
 }
 .universitet-xona-bandmas:hover {
   background-color: green;
+}
+@media screen and (max-width: 668px) {
+  .universitet-yotoqxona-wrapper {
+    width: 90%;
+    gap: 20px;
+  }
+  .universitet-xona {
+    width: 150px;
+    text-align: center;
+    padding: 8px;
+  }
 }
