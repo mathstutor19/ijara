@@ -1,3 +1,9 @@
+.universitet-yotoqxona-wrapper {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
 .universitet-yotoqxona {
   display: inline-block;
   padding: 10px;
@@ -8,20 +14,44 @@
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.universitet-yotoqxona:hover {
+  background-color: rgb(81, 236, 81);
+}
+.universitet-xona-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .universitet-xona {
-  display: inline-block;
-  padding: 10x;
-  margin-right: 20px;
+  width: 170px;
+  text-align: center;
+  padding: 10px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 .universitet-xona-band {
-  background-color: rgb(245, 75, 70);
+  background-color: rgba(253, 5, 5, 0.692);
+}
+.universitet-xona-band:hover {
+  background-color: red;
 }
 .universitet-xona-bandmas {
   background-color: rgb(17, 219, 17);
+}
+.universitet-xona-bandmas:hover {
+  background-color: green;
 }

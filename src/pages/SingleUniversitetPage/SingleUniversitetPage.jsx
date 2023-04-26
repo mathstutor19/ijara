@@ -18,17 +18,19 @@ function SingleUniversitetPage() {
       <Container>
         <article className="single-home-card">
           <h2 className="heading-two text-center">Yotoqxona Tanlang</h2>
-          {singleUniversity[0].yotoqxona.map((item) => (
-            <div
-              className="universitet-yotoqxona"
-              onClick={() => getId(item.id)}
-              key={item.id}
-            >
-              {item.id} Yotoqxona
-            </div>
-          ))}
+          <div className="universitet-yotoqxona-wrapper">
+            {singleUniversity[0].yotoqxona.map((item) => (
+              <div
+                className="universitet-yotoqxona"
+                onClick={() => getId(item.id)}
+                key={item.id}
+              >
+                {item.id} Yotoqxona
+              </div>
+            ))}
+          </div>
           {show && (
-            <div>
+            <div className="universitet-xona-wrapper">
               {singleUniversity[0].yotoqxona
                 .filter((item) => item.id == xonalar)
                 .map((item) => item.xonalar)[0]
@@ -41,7 +43,7 @@ function SingleUniversitetPage() {
                     }
                     key={item.id}
                   >
-                    {item.id} xona {item.band}
+                    {item.id}-xona {item.band}
                   </div>
                 ))}
             </div>
